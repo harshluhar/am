@@ -1,0 +1,14 @@
+.page-title{
+    font-size: 55px;
+    color: white;
+    visibility: hidden;
+}
+
+/*******PRODUCTS*******/
+#products{
+    font-size: 200px;
+    color: #38B6FF;
+    height: 0;
+    overflow: hidden;
+    hyphens: auto;
+}

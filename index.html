@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shree Ashapura Mould</title> 
+  <link rel = "icon" href = "images/1title-logo.png">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" media="only screen and (orientation: portrait)" href="./styles/responsive-home.css">
+  <link rel="stylesheet" href="./styles/products.css">
+  <script src="./javascript/dynamicImages.js"></script>
+  <script src="./javascript/responsiveNavigation.js"></script>
+  <script src="./javascript/home.js"></script>
+  <script src="./javascript/products.js"></script>
+
+  <script src="./javascript/responsiveHome.js"></script>
+  <script src="./javascript/responsiveProducts.js"></script>
+</script>
+</head>
+
+<body onload="setTimeout(dynamicImages, 10000)">
+<header>
+<!----------------NAVIGAITON------------------->
+<nav>
+<!-- Height of logo is taken as 25px; total 25+15+15 = 55px -->
+  <a href="index.html" style="height: 55px;">
+    <img src="images/1logo.png" alt="AM logo" style="margin:15px; height:25px" >
+  </a> 
+  <a id="home-button" class="nav">Home</a>
+  <a onclick="products()" id="products-button" class="nav">Products</a>
+  <a href="./About-us.html" class="nav">About us</a>
+  <a href="./Infrastructure.html" class="nav">Infrastructure</a>
+  <a href="./Contact-us.html" class="nav">Contact us</a>      
+</nav>
+<!--Responsive Navbar-->
+<nav id="responsive-navbar">
+  <a id="responsive-home-button" class="nav">Home</a>
+  <a onclick="responsiveProducts()" id="responsive-products-button" class="nav">Products</a>
+  <a href="./About-us.html" class="nav">About us</a>
+  <a href="./Infrastructure.html" class="nav">Infrastructure</a>
+  <a href="./Contact-us.html" class="nav">Contact us</a>  
+  <!-- Height of logo is taken as 25px; total 25+15+15 = 55px -->
+  <a href="index.html" style="height: 55px; display:flex; justify-content: center;">
+    <img src="images/1logo.png" alt="AM logo" style="margin:15px; height:25px" >
+  </a>
+  <a onclick="responsiveNavigation()" id="responsive-navigation-button" class="nav" style="padding:0;height: 20px; ">=</a> 
+</nav>
+</header>
+<!----------------FIRST------------------->
+  <div id="first-image-upper-div">
+    <div id="first-image-div">
+    </div>
+  </div>
+
+  <div id="floating-text-div">
+    
+      <div id="floating-text">Looking for<br>PET Preform Moulds?</div>
+  
+  </div>
+<!----------------SECOND------------------->
+  <div id="second-blue-div"> 
+    <div style="display: flex; align-items: center; justify-content: center; height: 100px; position: absolute; width:100%">
+      <div id = "products-title" class="page-title">PRODUCTS</div>
+    </div>
+    <div id="second-div"> <!--BE CAREFUL HERE, IT CAN CAUSE SCROLLING ISSUES IF OVERFLOW NOT USED-->
+      <div id="second-text">Manufacturer of <br> PET Preform Moulds</div>
+    </div>
+    <img src="images/3second-image.jpg.png" alt="more preforms" width= 300px id="second-image">
+  </div>
+
+  <!----------------PRODUCTS---------------->
+  <div id="products">
+      HERE ARE ALL THE PRODUCTS!
+  </div>
+
+  </div>
+  <!----------------FOOTER------------------->
+<footer>
+  <div id="footer">
+    <ul>
+      <li><a class="footer">Home</a></li>
+      <li><a class="footer">Products</a></li>
+      <li><a href="index.html/About-us.html" class="footer">About us</a></li>
+      <li><a href="index.html/Infrastructure.html" class="footer">Infrastructure</a></li>
+      <li><a href="index.html/Contact-us.html" class="footer">Contact us</a></li>
+    </ul>
+    </div>
+</footer>
+</body>

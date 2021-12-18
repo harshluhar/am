@@ -1,0 +1,156 @@
+/*************BASIC************/
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    /*background-image: linear-gradient(#38B6FF, hsl(0, 0%, 50%)); */
+    background-color: transparent;
+    background-size: 100% 400px;
+}
+
+/*************HEADER***********/
+
+/*div*/ nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0px 2px 4px rgb(64, 64, 64) ;
+    z-index: 5;
+}
+nav:last-child{
+    display: none;
+}
+/*elements*/.nav{
+    box-sizing: border-box;
+    height: 55px;
+    padding: 21px 10px 21px 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav:hover{
+    background-color: rgba(208, 208, 208, 0.8);
+    cursor: pointer;
+    user-select: none;
+}
+
+/********FIRST IMAGE***********/
+#first-image-upper-div{
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+#first-image-div {
+    background-image: url('/images/dynamicImage0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: calc(100% + 20px);
+    height:400px;
+
+    transform: translateX(0%);
+    animation: dynamic-scroll 10s infinite;
+}
+@keyframes dynamic-scroll{
+    0% {transform: translateX(-100%); animation-timing-function: ease-out; opacity: 0;}
+    5% {transform: translateX(-20px); animation-timing-function: linear; opacity: 1;}
+    95% {transform: translateX(0px);animation-timing-function: ease-in; opacity: 1;}
+    100% {transform: translateX(100%); opacity: 0;}
+}
+#floating-text-div{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: dynamic-scroll-text 10s infinite ease-in-out;
+
+    overflow: hidden;
+}
+#floating-text{
+    position: absolute;
+    left: 50%;
+    width: fit-content;
+    top:100px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    font-size: 60px;
+    line-height: 53px;
+    /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0,0,0,0)); */
+    
+} 
+/*Link to #floating-text-div*/@keyframes dynamic-scroll-text{
+    0% {transform: translateX(-100%);  opacity: 0;}
+    5% {transform: translateX(-375px); opacity: 1;}
+    95% {transform: translateX(-365px); opacity: 1;}
+    100% {transform: translateX(115%); opacity: 0;}
+}
+/*********SECOND IMAGE**********/
+#second-blue-div{
+    position: relative; /*for using z-index this is necessary;*/
+    height: 100px;
+    background-color: #38B6FF;
+    box-shadow: 0 0 5px;
+    z-index: 4  /****************IMPORTANT! Z-index works only on positioned elements.********/
+}
+
+#second-div{
+    position: relative; 
+    left:50%; 
+    width: 50%;
+}
+#second-text{
+    font-size: 45px;
+    letter-spacing: 0px;
+    color: white;
+    text-shadow: 0 0 4px black;
+    text-align: left;
+    position: relative;
+    top:7px;
+    right: 350px;
+    line-height: 35px;
+  
+    animation: second 0.75s;
+}
+    @keyframes second {
+        0%{top: 30px; opacity: 0;}
+        100%{top: 15px; opacity: 1;}  
+    }
+    /* text-shadow: 2px 2px 3px black; */
+
+#second-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 250px;
+    bottom: 245px;
+}
+
+
+/*********FOOTER**********/
+footer{
+    background-color: rgb(240, 240, 240);
+}
+#footer{
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    width: 1000px;
+    height: 150px;
+    padding-top: 16px;
+}
+li{
+    list-style-type: none;
+}
+.footer{
+    list-style-type: none;
+    color: black; 
+    text-decoration: none;
+    cursor: pointer;
+}

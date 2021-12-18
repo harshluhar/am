@@ -1,0 +1,55 @@
+
+/*************LETS GOOOOOOOO STEP BY STEPPPPPP!!!!!!!!!!!!***********/
+/*************HEADER***********/
+nav {
+display: none;
+}   
+/*selecting the responsive nav*/ nav:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    top: calc(-100vh + 75px);
+}
+
+/*elements*/.nav{
+    text-align: center;
+}
+
+/********FIRST IMAGE***********/
+
+#floating-text{
+    position: static;
+    font-size: 40px;
+    line-height: 32px;
+    left: 0;
+   }
+/*Link to #floating-text-div*/ @keyframes dynamic-scroll-text{
+    0% {transform: translateX(-100%);  opacity: 0;}
+    5% {transform: translateX(10px); opacity: 1;}
+    95% {transform: translateX(15px); opacity: 1;}
+    100% {transform: translateX(100%); opacity: 0;}
+}
+
+/*********SECOND IMAGE**********/
+#second-image{
+    display: none;
+    }
+#second-div{
+    width: 100%;
+    left: auto;
+    text-align: center;
+    
+    }
+#second-text{
+    font-size: 40px;
+    text-align: center;
+    position: static;
+    padding: 15px;
+    
+}
+
+/*********FOOTER**********/
+#footer{
+    width: 100%;
+    }
